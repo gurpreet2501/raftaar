@@ -1,0 +1,17 @@
+<?php if($label != ''): ?>
+<label for="<?=htmlspecialchars($name)?>" class="">
+  <?=htmlentities($label)?>
+</label>
+<?php endif; ?>
+
+<input  type="text" 
+        class="regular-text <?=htmlspecialchars($classes)?>" 
+        id="<?=htmlspecialchars($name)?>" 
+        name="<?=htmlspecialchars($name)?>" 
+        placeholder="<?=htmlspecialchars($palceholder)?>"
+        value="<?=htmlspecialchars($value)?>"
+        <?=$attributes?>/>
+        
+<?php if($help != ''): ?>
+<code><?=htmlentities($help);?></code>
+<?php endif; ?>

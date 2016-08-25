@@ -1,0 +1,13 @@
+{
+  "table" : "bp_xprofile_data",
+  "name"  : "wp_bp_xprofile_data",
+  "pkey"  : "id",
+  "fields": {},
+  "relations" :{
+    "field" : {
+      "type"   : "M-1",
+      "path"   : ["field_id","id"],
+      "object" : "wp_bp_xprofile_fields"
+    }
+  }
+}

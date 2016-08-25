@@ -1,0 +1,15 @@
+<?php if($label != ''): ?>
+  <label for="<?=htmlspecialchars($name)?>" class="">
+    <?=htmlentities($label)?>
+  </label>
+<?php endif; ?>
+<textarea type="text" 
+          class="regular-text <?=htmlspecialchars($classes)?>" 
+          id="<?=htmlspecialchars($name)?>" 
+          name="<?=htmlspecialchars($name)?>" 
+          placeholder="<?=htmlspecialchars($placeholder)?>"
+          <?=$attributes?>/><?=htmlspecialchars($value)?></textarea>
+<?php if($help != ''): ?>
+  <code><?=htmlentities($help);?></code>
+<?php endif; ?>
+  

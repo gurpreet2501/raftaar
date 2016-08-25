@@ -1,0 +1,16 @@
+<?php if($label != ''): ?>
+  <label for="<?=htmlspecialchars($name)?>" class="col-sm-2 control-label">
+    <?=htmlentities($label)?>
+  </label>
+<?php endif; ?>
+<div class="col-sm-10">
+  <textarea type="text" 
+            class="form-control <?=htmlspecialchars($classes)?>" 
+            id="<?=htmlspecialchars($name)?>" 
+            name="<?=htmlspecialchars($name)?>" 
+            placeholder="<?=htmlspecialchars($placeholder)?>"
+            <?=$attributes?>/><?=htmlspecialchars($value)?></textarea>
+  <?php if($help != ''): ?>
+    <p class="help-block"><?=htmlentities($help);?></p>
+  <?php endif; ?>
+</div>

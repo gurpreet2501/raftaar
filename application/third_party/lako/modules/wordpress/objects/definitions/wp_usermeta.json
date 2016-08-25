@@ -1,0 +1,6 @@
+{
+  "table" : "usermeta",
+  "name"  : "wp_usermeta",
+  "pkey"  : "umeta_id",
+  "fields": {}
+}

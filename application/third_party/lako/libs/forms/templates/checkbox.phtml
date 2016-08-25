@@ -1,0 +1,21 @@
+<?php if($label != ''): ?>
+  <label for="<?=htmlspecialchars($name)?>" class="col-sm-2 control-label">
+    <?=htmlentities($label)?>
+  </label>
+<?php endif; ?>
+<div class="col-sm-10">          
+  <? foreach($options as $l_value => $label): ?>    
+      <label>
+        <input  id="<?=htmlspecialchars($name.'_'.$l_value)?>" 
+                name="<?=htmlspecialchars($name)?>[]" 
+                type="checkbox" 
+                <?=in_array($l_value,$value)?'checked':'';?> 
+                value="<?=htmlspecialchars($l_value)?>" 
+                <?=$attributes?>>
+        <?=htmlspecialchars($label)?>
+      </label>
+  <? endforeach; ?>
+  <?php if($help != ''): ?>
+    <p class="help-block"><?=htmlentities($help);?></p>
+  <?php endif; ?>
+</div>

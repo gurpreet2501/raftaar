@@ -1,0 +1,14 @@
+{
+  "table" : "users",
+  "name"  : "wp_users",
+  "pkey"  : "ID",
+  "fields": {},
+  "relations" :{
+    "xprofile" : {
+      "type"   : "1-M",
+      "path"   : ["ID","user_id"],
+      "object" : "wp_bp_xprofile_data"
+    }
+  }
+  
+}

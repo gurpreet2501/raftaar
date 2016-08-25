@@ -1,0 +1,66 @@
+#crudForm .form-input-box input[type="text"],
+#crudForm .form-input-box input[type="password"],
+#crudForm .form-input-box input[type="email"]{
+    height: 30px;
+}
+.dataTablesContainer .btn-info{
+    border-radius: 0px;
+}
+.modal-backdrop{
+    display: none;
+}
+
+ input.qsbsearch_fieldox.search_text {
+    height: 28px;
+}
+
+ select#search_field {
+    height: 28px;
+}
+
+@media (min-width: 768px){
+    #manage-technician-model .modal-dialog {
+        width: 800px;
+    }
+}
+
+#manage-technician-model iframe{
+    height:340px;
+    width:100%;
+}
+#back-to-top{
+    display: none !important;
+}
+
+
+.base-auth{
+    background-color: #4a4a4a;
+    background-image: none;
+}
+
+.base-auth .wrapper{
+    max-width: 600px;
+    margin: auto;
+}
+.base-auth h1,.base-auth h2,
+.base-auth h3,.base-auth h4,
+.base-auth h5,.base-auth p,
+.base-auth span,.base-auth label,
+.base-auth a{
+    color: white;
+}
+.base-auth a{
+    text-decoration: underline;
+}
+#login-container .error{
+    color:#ff6262;
+}
+.edit-form-del-btn {
+    float: left;
+    margin-top: 11px;
+    margin-left: 15px;
+}
+input.ui-input-button.edit-form-del {
+    height: 28px;
+    box-shadow: ;
+}

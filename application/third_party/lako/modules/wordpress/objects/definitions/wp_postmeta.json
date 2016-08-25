@@ -1,0 +1,13 @@
+{
+  "table" : "postmeta",
+  "name"  : "wp_postmeta",
+  "pkey"  : "meta_id",
+  "fields": {},
+  "relations" : {
+    "meta":{
+      "type": "M-1",
+      "path": ["post_id","ID"],
+      "object": "wp_posts"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+h1#site-logo {
+    display: none;
+}
+header#header {
+    display: none;
+}
+.form-input-box input {
+    width: 100% !important;
+}
+.form-input-box {
+    float: none;
+}
